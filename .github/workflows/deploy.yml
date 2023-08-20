@@ -13,8 +13,8 @@ jobs:
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: githubactions.q9or91x.mongodb.net
-      MONGODB_USERNAME: guilhermelange
-      MONGODB_PASSWORD: guilhermelange
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
 
     environment: testing
